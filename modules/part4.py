@@ -1,5 +1,5 @@
 # Part 4 — Cart Processing
-from part3 import scanned, required, forgotten_items
+from .part3 import scanned, required, forgotten_items
 barcode_dict = {"mango juice":1015, "roti":2002, "kurta":1009, "shampoo":3008}
 
 def count_cart_items(scanned_items, required_items=None):

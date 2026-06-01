@@ -67,5 +67,3 @@ def shopping_report(items):
 		discounted_total += apply_discount(price, items, 0.2)
 	r["discounted total price"]=round(discounted_total,2)
 	return report
-
-# print(shopping_report(prices))

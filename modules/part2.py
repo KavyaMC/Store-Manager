@@ -1,5 +1,5 @@
 # Part 2 — Categories & Second Payoff
-from part1 import shopping_report, prices
+from .part1 import shopping_report, prices
 categories = ["food", "clothes", "food", "toiletries"]
 
 def shopping_report_with_categories(items, categories):
@@ -33,5 +33,3 @@ def most_expensive_category(items, categories):
 			highest_amount = amount
 			highest_cat = category
 	return f"{highest_cat}: {highest_amount}"
-
-print(most_expensive_category(prices, categories))

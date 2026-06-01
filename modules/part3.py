@@ -22,8 +22,3 @@ def clean_product_names(raw_a, raw_b):
 def forgotten_items(cart, required_items):
 	result = clean_product_names(required_items, cart)
 	return result["only_a_wants"]
-
-print(forgotten_items(
-    ["mango juice", "roti"],
-    {"Mango Juice", " roti ", "PANEER", "milk"}
-))
